@@ -71,8 +71,8 @@ jobs:
       - name: upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
-        appId: ${{secrets.ANDROID_FIREBASE_APP_ID}}
-        token: ${{secrets.ANDROID_FIREBASE_TOKEN}}
-        groups: testers
-        file: ${{steps.sign_app.outputs.signedReleaseFile}}
+          appId: ${{secrets.ANDROID_FIREBASE_APP_ID}}
+          token: ${{secrets.ANDROID_FIREBASE_TOKEN}}
+          groups: testers
+          file: ${{steps.sign_app.outputs.signedReleaseFile}}
 
