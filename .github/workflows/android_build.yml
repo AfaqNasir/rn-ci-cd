@@ -75,4 +75,4 @@ jobs:
           token: ${{secrets.ANDROID_FIREBASE_TOKEN}}
           groups: testers
           file: ${{steps.sign_app.outputs.signedReleaseFile}} 
-
+ 
